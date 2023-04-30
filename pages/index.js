@@ -86,7 +86,7 @@ export default function Home() {
                     }}>
                         <div className="flex flex-col items-end cursor-pointer">
                             <p className="text-3xl font-medium lg:text-7xl m-0">knews2@naver.com</p>
-                            <p>커리어, 프로젝트에 대해 논의하고 싶거나 저에 대해 알고 싶다면 언제든지 이메일 주세요 :D</p>
+                            <p className="text-sm lg:text-base">커리어, 프로젝트에 대해 논의하고 싶거나 저에 대해 알고 싶다면 언제든지 이메일 주세요 :D</p>
                         </div>
                     </CopyToClipboard>
                 </div>
