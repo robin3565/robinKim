@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["src/components/*"],
+      "@layout/*": ["src/components/Layout/*"],
+      "@config/*": ["src/core/config/*"],
+      "@api/*": ["src/core/api/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@공통/*": ["src/components/@공통/*"],
+      "@projects/*": ["src/components/projects/*"],
+      "@styles/*": ["styles/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+  ]
+}
