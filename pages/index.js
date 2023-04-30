@@ -13,7 +13,7 @@ export default function Home() {
             <Toaster />
             <section
                 className="container mx-auto p-5 items-center w-full pt-5 md:pt-12 sm:pt-16">
-                <div className='w-full md:w-1/2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold h-32 md:h-40'>
+                <div className='w-full md:w-1/2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold h-32 md:h-52'>
                     <TypewriterComponent
                         options={{
                             strings: [
@@ -60,7 +60,7 @@ export default function Home() {
                 className="container mx-auto p-5 md:py-12 items-center w-full w-full">
                 <div className="flex md:flex-row flex-col justify-between">
                     <div><p className='text-3xl font-medium lg:text-5xl'>Stack & Tools</p></div>
-                    <div className="md:w-1/2 w-full flex flex-wrap md:items-end items-center  md:justify-end justify-center">
+                    <div className="md:w-3/5 w-full flex flex-wrap md:items-end items-center  md:justify-end justify-center">
                         {stacks.map((stack, idx) => (
                             <div className="flex p-5 mx-3 flex-col w-24 h-28 justify-center items-center" key={idx}>
                                 <Image alt={stack.imgName} width={50} height={50} src={`/img/${stack.imgName}`} />
@@ -74,7 +74,7 @@ export default function Home() {
                 <div>
                     <p className='text-3xl font-medium lg:text-5xl'>Contact 📧</p>
                     <CopyToClipboard text="knews2@naver.com" onCopy={() => {
-                        toast.success("이메일이 복사 되었습니다.", {
+                        toast.success("이메일을 복사했습니다.", {
                             position: "bottom-center",
                             icon: '📧',
                             style: {

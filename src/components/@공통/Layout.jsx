@@ -1,11 +1,9 @@
 import Border from "@atoms/Border";
-import Meta from "./Meta";
 import Navbar from "@components/@공통/Navbar";
 
 export function Layout({ keyword, children }) {
   return (
     <>
-      <Meta />
       <Navbar keyword={keyword} />
       <Border />
       {children}
