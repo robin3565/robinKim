@@ -1,5 +1,6 @@
 const CONFIG = {
   keyword: {
+    logo: ['R', 'o', 'b', 'i', 'n'],
     en: "Robin",
     kr: "로빈",
   },

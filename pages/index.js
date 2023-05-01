@@ -31,8 +31,8 @@ export default function Home() {
                 </p>
                 <div>
                     <p className='text-xl sm:text-2xl lg:text-3xl'>
-                        사용자에게 도움을 줄 수 있는 서비스를 구현하고자
-                        <br />개발자를 꿈꾸게 되었습니다.
+                        사용자에게 도움을 주는 서비스를 구현하는
+                        <br />개발자를 꿈꾸고 있습니다.
                     </p>
                     <p className='text-xl sm:text-2xl lg:text-3xl'>
                         배우는 걸 좋아해 어려운 문제를 마주하더라도 잘 해결할 수 있습니다.<br />

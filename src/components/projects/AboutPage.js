@@ -28,16 +28,15 @@ export default function AboutPage() {
 
             <div>
                 <p className="font-semibold text-2xl md:text-3xl"><strong><span>💻</span></strong>
-                    <span> Front-end Developer</span>
+                    <span> Web Developer</span>
                 </p>
                 <hr />
                 <p>
-                    안녕하세요. 웹 개발자 김유선입니다.<br />
-                    저는 현재까지 다양한 웹 개발 프로젝트를 수행하면서, React, NextJS 프레임워크를 사용한 프론트엔드와, node.js와 express 엔진을 사용한 api 백엔드 개발을 했습니다.
+                    다양한 웹 개발 프로젝트를 수행하면서, React, NextJS 프레임워크를 사용한 프론트엔드와, node.js와 express 엔진을 사용한 api 백엔드 개발을 했습니다.
                     이를 통해 웹 서비스의 사용자 경험을 향상시키는 역할을 수행하고 있습니다. <br />
                     항상 최신 기술 동향과 개발 방법론에 관심을 가지고, 늘 새로운 기술과 개발 방법을 익히고 있습니다. 최근에는 Next.js를 사용하여 프론트엔드와 백엔드를 더욱 효율적으로 연결하고 개발 속도와 성능을 향상시키고 있습니다.
                     <br />
-                    저는 다양한 프로젝트 경험을 바탕으로, 웹 개발 분야에서 전반적인 경험과 기술력을 보유하고 있습니다. 또한, 새로운 기술과 개발 방법을 빠르게 익히고 적용할 수 있는 능력을 갖추고 있습니다. 이러한 능력을 바탕으로, 더욱 높은 수준의 웹 서비스 개발과 성과 달성을 위해 노력하겠습니다. 감사합니다.
+                    다양한 프로젝트 경험을 바탕으로, 웹 개발 분야에서 전반적인 경험과 기술력을 보유하고 있습니다. 또한, 새로운 기술과 개발 방법을 빠르게 익히고 적용할 수 있는 능력을 갖추고 있습니다. 이러한 능력을 바탕으로, 더욱 높은 수준의 웹 서비스 개발과 성과 달성을 위해 노력하겠습니다. 감사합니다.
                 </p>
             </div>
             <div>
@@ -134,6 +133,12 @@ export default function AboutPage() {
                     <li><span>점수 : 865</span></li>
                     <li><span>발행기관 : 한국TOEIC위원회</span></li>
                 </div>
+                <div>
+                    <h2 id='HSK' className="text-2xl md:text-3xl mt-10"><span>HSK 6급</span></h2>
+                    <li><span>취득일자 : 20.01.11</span></li>
+                    <li><span>점수 : 238</span></li>
+                    <li><span>발행기관 : HSK사무국</span></li>
+                </div>
             </div>
             <div>
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🎓 Education 학위</span></p>
@@ -143,7 +148,7 @@ export default function AboutPage() {
                 <li><span>학점: 3.6 / 4.5</span></li>
             </div>
             <div>
-                <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🟢 Experiences 경험</span></p>
+                <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🔮 Experiences 경험</span></p>
                 <hr />
                 <h2 className="text-2xl md:text-3xl"><span>스마트인재개발원</span></h2>
                 <span className="rounded-full px-4 py-2 bg-slate-500 text-white">2020.12 ~ 2021.06</span>
