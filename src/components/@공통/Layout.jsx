@@ -1,5 +1,6 @@
 import Border from "@atoms/Border";
 import Navbar from "@components/@공통/Navbar";
+import Footer from "./Footer";
 
 export function Layout({ keyword, children }) {
   return (
@@ -20,5 +21,9 @@ export function PageLayout({ children }) {
 }
 
 export function MainLayout({ children }) {
-  return <main className="mx-auto p-5 w-full xl:w-9/12">{children}</main>;
+  return (
+    <main className="mx-auto p-5 w-full xl:w-9/12">
+      {children}
+    </main>
+  );
 }
