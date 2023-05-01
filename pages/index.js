@@ -4,13 +4,12 @@ import { MainLayout } from '@공통/Layout';
 import Link from "next/link";
 import TypewriterComponent from "typewriter-effect";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { toast, Toaster } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import Image from "next/image";
 
 export default function Home() {
     return (
         <MainLayout>
-            <Toaster />
             <section
                 className="container mx-auto p-5 items-center w-full pt-5 md:pt-12 sm:pt-16">
                 <div className='w-full md:w-1/2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold h-32 md:h-52'>
@@ -91,6 +90,22 @@ export default function Home() {
                     </CopyToClipboard>
                 </div>
             </section>
+            <footer>
+                <div className="container flex flex-col md:flex-row items-center justify-between my-8">
+                    <div>
+                        <p className="text-sm md:text-base">© Yuseon Kim 2023. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div className="border rounded-full bg-white border-black border-2 py-1 md:px-3 px-2 flex items-center justify-center md:m-0 my-1">
+                        <Link href='https://github.com/robin3565' target='_blank' rel='noopener noreferrer' className="inline-flex items-center justify-center">
+                            <Image
+                                width="30"
+                                height="30"
+                                className="rounded-full" src="/img/github.png" />
+                            <span className="mx-1 md:text-xl text-base font-semibold">Github</span>
+                        </Link>
+                    </div>
+                </div>
+            </footer>
         </MainLayout>
     )
 }

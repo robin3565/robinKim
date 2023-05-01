@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { toast } from "react-hot-toast";
 
 export default function AboutPage() {
     return (
@@ -17,7 +19,20 @@ export default function AboutPage() {
                         <span>Contact &amp; Channels</span>
                     </p>
                     <hr />
-                    <p><strong>📧 Email | </strong><span>knews2@naver.com</span></p>
+                    <CopyToClipboard text="knews2@naver.com" onCopy={() => {
+                        toast.success("이메일을 복사했습니다.", {
+                            position: "top-center",
+                            icon: '📧',
+                            style: {
+                                borderRadius: '10px',
+                                background: '#333',
+                                color: '#fff',
+                            },
+                        })
+                    }}>
+                        <p className="cursor-pointer"><strong>📧 Email | </strong><span>knews2@naver.com</span></p>
+                    </CopyToClipboard>
+
                     {/* <p><strong>📱 Phone | </strong><span>010-3055-3565</span></p> */}
                     <p><strong>🐱 Github | </strong>
                         <a href='https://github.com/robin3565' target='_blank' rel='noopener noreferrer'>https://github.com/robin3565</a></p>

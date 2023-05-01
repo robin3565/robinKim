@@ -3,6 +3,7 @@ import '../styles/markdown.css'
 import Head from 'next/head';
 import CONFIG from '@/portfolio.config';
 import { Layout } from '@공통/Layout';
+import { Toaster } from 'react-hot-toast';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" as="style" crossOrigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
       </Head>
       <Layout keyword={CONFIG.keyword.logo}>
+            <Toaster />
         <Component {...pageProps} />
       </Layout>
     </>
