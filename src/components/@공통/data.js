@@ -71,9 +71,9 @@ const mainProjects = [
     {
         id: 2,
         menu: 'Project',
-        imgName: "instagramClone.jpg",
-        title: "Instagram Clone",
-        path: "https://github.com/robin3565/instagram-clone-React",
+        imgName: "시장.jpg",
+        title: "시장275 프로젝트",
+        path: "https://github.com/robin3565/market_frontend",
     }
 ]
 
@@ -112,9 +112,9 @@ const projectData = [
             {
                 id: 0,
                 menu: 'Project',
-                imgName: "motivationApp.jpg",
-                title: "Motivation App",
-                path: "https://github.com/robin3565/motivation-app-React",
+                imgName: "시장.jpg",
+                title: "시장275 프로젝트",
+                path: "https://github.com/robin3565/market_frontend",
             }, {
                 id: 1,
                 menu: 'Project',
