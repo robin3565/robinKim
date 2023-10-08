@@ -60,13 +60,13 @@ export default function AboutPage() {
                 <div>
                     <h2 className="text-2xl md:text-3xl"><a href="http://teama.company/" className="text-slate-600 " target="_blank">팀에이컴퍼니</a></h2>
                     <span className="rounded-full px-4 py-2 bg-slate-500 text-white">2022.10 ~ </span></div>
-                <p className="text-xl font-semibold">[ 개발팀 ] 웹 개발자</p>
+                <p className="text-xl font-semibold">[ 개발팀 ] 프론트엔드 개발자</p>
 
-                <ul className="list-disc"><li>아래 링크를 통해 참여한 프로젝트를 확인할 수 있습니다.</li>
+                {/* <ul className="list-disc"><li>아래 링크를 통해 참여한 프로젝트를 확인할 수 있습니다.</li>
                     <li className="my-1 list-none"><a className="underline text-slate-600 font-semibold" target="_blank" href="https://www.notion.so/Project-TeamA-Holdings-Full-stack-Review-4c0213d6a9c04c308f20d5f192d7e914">[Project] TeamA Holdings Full-stack Review</a></li>
                     <li className="my-1 list-none"><a className="underline text-slate-600 font-semibold" target="_blank" href="https://www.notion.so/Project-Stand-Full-stack-Review-c64f8a93d9ce44fdacf696055566323a">[Project] Stand Full-stack Review</a></li>
                     <li className="my-1 list-none"><a className="underline text-slate-600 font-semibold" target="_blank" href="https://www.notion.so/Project-Upsun-Global-FE-Part-Review-d9dc9668e54d4b6e8cbe3aa7f05b63d2">[Project] Upsun-Global FE Part Review</a></li>
-                </ul>
+                </ul> */}
             </div>
             <div>
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🛠 Stacks 개발 기술</span></p>
@@ -93,6 +93,11 @@ export default function AboutPage() {
                         <li><span>Next.js의 기능을 활용하여 코드를 합리적으로 분리하고, 재사용성을 높일 수 있습니다.</span></li>
                         <li><span>Next.js의 내장 API 라우팅을 활용하여 백엔드 API를 빠르게 개발하고 서버리스 애플리케이션을 만들 수 있습니다.</span></li>
                     </ul>
+                    <h2 id='next-js' className="text-xl md:text-2xl mt-10"><span>Flutter</span></h2>
+                    <ul className="list-disc">
+                        <li><span>Dart 언어의 기본을 이해하고 활용할 수 있습니다.</span></li>
+                        <li><span>Flutter를 사용하여 기본적인 안드로이드, iOS App을 만들 수 있습니다.</span></li>
+                    </ul>
                 </div>
                 <div>
                     <p className="text-2xl md:text-3xl font-bold">Back-end<span className="text-slate-500">.</span></p>
@@ -106,7 +111,7 @@ export default function AboutPage() {
                         <li><span>비즈니스 로직에 따라 효율적인 DB를 설계할 수 있습니다.</span></li>
                     </ul>
                 </div>
-                <div>
+                {/* <div>
                     <p className="text-2xl md:text-3xl font-bold">ETC<span className="text-slate-500">.</span></p>
                     <h2 id='block-chain' className="text-xl md:text-2xl mt-10"><span>Block Chain (Web 3.0)</span></h2>
                     <ul className="list-disc">
@@ -122,7 +127,7 @@ export default function AboutPage() {
                     <ul className="list-disc">
                         <li><span>Git을 활용한 소스코드 버전 관리 및 협업을 할 수 있습니다.</span></li>
                     </ul>
-                </div>
+                </div> */}
 
 
 
@@ -131,25 +136,25 @@ export default function AboutPage() {
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>💡 Skills 자격 정보</span></p>
                 <hr />
                 <div>
-                    <h2 id='정보처리기사' className="text-2xl md:text-3xl mt-10"><span>정보처리기사</span></h2>
+                    <h3 id='정보처리기사' className="text-xl md:text-2xl mt-10"><span>정보처리기사</span></h3>
                     <li><span>취득일자 : 20.08.28</span></li>
                     <li><span>등록번호 : 20202060587Z</span></li>
                     <li><span>발행기관 : 한국산업인력공단</span></li>
                 </div>
                 <div>
-                    <h2 id='전자상거래관리사2급' className="text-2xl md:text-3xl mt-10"><span>전자상거래관리사2급</span></h2>
+                    <h3 id='전자상거래관리사2급' className="text-xl md:text-2xl mt-10"><span>전자상거래관리사2급</span></h3>
                     <li><span>취득일자 : 17.09.27</span></li>
                     <li><span>등록번호 : 17849620046B</span></li>
                     <li><span>발행기관 : 한국산업인력공단</span></li>
                 </div>
                 <div>
-                    <h2 id='TOEIC' className="text-2xl md:text-3xl mt-10"><span>TOEIC</span></h2>
+                    <h3 id='TOEIC' className="text-xl md:text-2xl mt-10"><span>TOEIC</span></h3>
                     <li><span>취득일자 : 23.03.12</span></li>
                     <li><span>점수 : 865</span></li>
                     <li><span>발행기관 : 한국TOEIC위원회</span></li>
                 </div>
                 <div>
-                    <h2 id='HSK' className="text-2xl md:text-3xl mt-10"><span>HSK 6급</span></h2>
+                    <h3 id='HSK' className="text-xl md:text-2xl mt-10"><span>HSK 6급</span></h3>
                     <li><span>취득일자 : 20.01.11</span></li>
                     <li><span>점수 : 238</span></li>
                     <li><span>발행기관 : HSK사무국</span></li>
@@ -158,11 +163,11 @@ export default function AboutPage() {
             <div>
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🎓 Education 학위</span></p>
                 <hr />
-                <h2 id='한국외국어대학교' className="text-2xl md:text-3xl"><span>한국외국어대학교</span></h2>
+                <h2 id='한국외국어대학교' className="text-xl md:text-2xl"><span>한국외국어대학교</span></h2>
                 <li><span>중국외교통상전공 </span><strong><span>학사</span></strong></li>
                 <li><span>학점: 3.6 / 4.5</span></li>
             </div>
-            <div>
+            {/* <div>
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🔮 Experiences 경험</span></p>
                 <hr />
                 <h2 className="text-2xl md:text-3xl"><span>스마트인재개발원</span></h2>
@@ -175,7 +180,7 @@ export default function AboutPage() {
                     <li className="my-1 list-none"><a className="underline text-slate-600 font-semibold" target="_blank" href="https://www.notion.so/devrobin/Web-SNS-4c5a6cc963db4636b9b03bfb883287d9">[Web 개발] 딥러닝 기반 SNS 인플루언서 분석 및 추천 서비스</a></li>
                     <li className="my-1 list-none"><a className="underline text-slate-600 font-semibold" target="_blank" href="https://www.notion.so/devrobin/Web-87c002800c1f4ab2b8d77180a62806b0">[Web 개발] 빅데이터 상권분석 & 머신러닝 기반 추천 서비스 프로젝트</a></li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

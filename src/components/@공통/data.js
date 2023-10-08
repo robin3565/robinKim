@@ -64,9 +64,9 @@ const mainProjects = [
     {
         id: 2,
         menu: 'Career',
-        title: "Stand Full-stack",
-        imgName: "stand.png",
-        path: "https://stand1.info/"
+        title: "ENFT-LAND FE Part",
+        imgName: "enft.png",
+        path: "https://enftland.com/"
     },
     {
         id: 2,
@@ -82,6 +82,13 @@ const projectData = [
         title: 'Career',
         subtitle: '개발 프로젝트에서 FE Part 또는 Full-Stack을 담당했습니다.',
         state: [
+            {
+                id: 0,
+                menu: 'Career',
+                title: "ENFT-LAND FE Part",
+                imgName: "enft.png",
+                path: "https://enftland.com/"
+            },
             {
                 id: 1,
                 menu: 'Career',
