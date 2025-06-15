@@ -1,6 +1,5 @@
 import Border from "@atoms/Border";
 import Navbar from "@components/@공통/Navbar";
-import Footer from "./Footer";
 
 export function Layout({ keyword, children }) {
   return (

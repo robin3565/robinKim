@@ -167,7 +167,7 @@ const navmenu = ['About', 'Projects', 'Contact']
 const contents = {
     kor: `안녕하세요. 웹 개발자 ${CONFIG.keyword.kr}입니다.`,
     eng: `Hello! I'm ${CONFIG.keyword.en}, the developer.`,
-    chn: `你好！我叫${CONFIG.keyword.en}，是网站开发者。`
+    chn: `你好！我叫${CONFIG.keyword.en}，是程序员。`
 };
 
 export { projectData, blogmenu, navmenu, projectsmenu, contents, mainProjects, stacks };

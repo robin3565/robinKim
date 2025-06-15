@@ -1,8 +1,21 @@
 import Image from "next/image";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
 
 export default function AboutPage() {
+    const [openSections, setOpenSections] = useState({
+        frontend: false,
+        backend: false,
+        skill: false,
+    });
+
+    const toggleSection = (section) => {
+        setOpenSections((prev) => ({
+            ...prev,
+            [section]: !prev[section],
+        }));
+    };
     return (
         <div id="write">
             <p className="text-3xl md:text-4xl font-semibold">안녕하세요, 반갑습니다. <br />개발자
@@ -58,8 +71,15 @@ export default function AboutPage() {
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>👩‍💻 Career 경력</span></p>
                 <hr />
                 <div>
+                    <h2 className="text-2xl md:text-3xl text-slate-600">전라남도교육청</h2>
+                    <span className="rounded-full px-4 py-2 bg-slate-500 text-white">2024.10 ~</span>
+                </div>
+                {/* <p className="text-xl font-semibold">전산직 공무원</p> */}
+                <hr className="mt-6" />
+                <div>
                     <h2 className="text-2xl md:text-3xl"><a href="http://teama.company/" className="text-slate-600 " target="_blank">팀에이컴퍼니</a></h2>
-                    <span className="rounded-full px-4 py-2 bg-slate-500 text-white">2022.10 ~ </span></div>
+                    <span className="rounded-full px-4 py-2 bg-slate-500 text-white">2022.10 ~ 2023.12</span>
+                </div>
                 <p className="text-xl font-semibold">[ 개발팀 ] 프론트엔드 개발자</p>
 
                 {/* <ul className="list-disc"><li>아래 링크를 통해 참여한 프로젝트를 확인할 수 있습니다.</li>
@@ -73,11 +93,6 @@ export default function AboutPage() {
                 <hr />
                 <div>
                     <p className="text-2xl md:text-3xl font-bold">Front-end<span className="text-slate-500">.</span></p>
-                    <h2 id='html-css' className="text-xl md:text-2xl mt-10"><span>HTML &amp; CSS</span></h2>
-                    <ul className="list-disc">
-                        <li><span>HTML, CSS로 웹 레이아웃을 설계할 수 있습니다.</span></li>
-                        <li><span>시맨틱한 웹 개발을 선호하며, 반응형 웹을 개발을 할 수 있습니다.</span></li>
-                    </ul>
                     <h2 id='javascript' className="text-xl md:text-2xl mt-10"><span>JavaScript</span></h2>
                     <ul className="list-disc">
                         <li><span>JavaScript에 능숙합니다.</span></li>
@@ -93,11 +108,23 @@ export default function AboutPage() {
                         <li><span>Next.js의 기능을 활용하여 코드를 합리적으로 분리하고, 재사용성을 높일 수 있습니다.</span></li>
                         <li><span>Next.js의 내장 API 라우팅을 활용하여 백엔드 API를 빠르게 개발하고 서버리스 애플리케이션을 만들 수 있습니다.</span></li>
                     </ul>
-                    <h2 id='next-js' className="text-xl md:text-2xl mt-10"><span>Flutter</span></h2>
-                    <ul className="list-disc">
-                        <li><span>Dart 언어의 기본을 이해하고 활용할 수 있습니다.</span></li>
-                        <li><span>Flutter를 사용하여 기본적인 안드로이드, iOS App을 만들 수 있습니다.</span></li>
-                    </ul>
+                    {/* 더보기 */}
+                    <p className="cursor-pointer text-xl font-semibold underline" onClick={() => toggleSection('frontend')}> More <span className="text-slate-500 text-sm">{openSections.frontend ? '▲' : '▼'}</span></p>
+                    {openSections.frontend && (
+                        <div>
+                            <h2 id='html-css' className="text-xl md:text-2xl mt-10"><span>HTML &amp; CSS</span></h2>
+                            <ul className="list-disc">
+                                <li><span>HTML, CSS로 웹 레이아웃을 설계할 수 있습니다.</span></li>
+                                <li><span>시맨틱한 웹 개발을 선호하며, 반응형 웹을 개발을 할 수 있습니다.</span></li>
+                            </ul>
+
+                            <h2 id='next-js' className="text-xl md:text-2xl mt-10"><span>Flutter</span></h2>
+                            <ul className="list-disc">
+                                <li><span>Dart 언어의 기본을 이해하고 활용할 수 있습니다.</span></li>
+                                <li><span>Flutter를 사용하여 기본적인 안드로이드, iOS App을 만들 수 있습니다.</span></li>
+                            </ul>
+                        </div>
+                    )}
                 </div>
                 <div>
                     <p className="text-2xl md:text-3xl font-bold">Back-end<span className="text-slate-500">.</span></p>
@@ -106,10 +133,17 @@ export default function AboutPage() {
                         <li><span>Express 프레임워크를 사용해 서버 애플리케이션을 구축할 수 있습니다.</span></li>
                         <li><span>RESTful API를 이해하고 구현할 수 있습니다.</span></li>
                     </ul>
-                    <h2 id='mysql' className="text-xl md:text-2xl mt-5"><span>MySQL</span></h2>
-                    <ul className="list-disc">
-                        <li><span>비즈니스 로직에 따라 효율적인 DB를 설계할 수 있습니다.</span></li>
-                    </ul>
+                    {/* 더보기 */}
+                    <p className="cursor-pointer text-xl font-semibold underline" onClick={() => toggleSection('backend')}> More <span className="text-slate-500 text-sm">{openSections.backend ? '▲' : '▼'}</span></p>
+                    {openSections.backend && (
+                        <div>
+                            <h2 id='mysql' className="text-xl md:text-2xl mt-5"><span>MySQL</span></h2>
+                            <ul className="list-disc">
+                                <li><span>비즈니스 로직에 따라 효율적인 DB를 설계할 수 있습니다.</span></li>
+                            </ul>
+
+                        </div>
+                    )}
                 </div>
                 {/* <div>
                     <p className="text-2xl md:text-3xl font-bold">ETC<span className="text-slate-500">.</span></p>
@@ -147,18 +181,24 @@ export default function AboutPage() {
                     <li><span>등록번호 : 17849620046B</span></li>
                     <li><span>발행기관 : 한국산업인력공단</span></li>
                 </div>
-                <div>
-                    <h3 id='TOEIC' className="text-xl md:text-2xl mt-10"><span>TOEIC</span></h3>
-                    <li><span>취득일자 : 23.03.12</span></li>
-                    <li><span>점수 : 865</span></li>
-                    <li><span>발행기관 : 한국TOEIC위원회</span></li>
-                </div>
-                <div>
-                    <h3 id='HSK' className="text-xl md:text-2xl mt-10"><span>HSK 6급</span></h3>
-                    <li><span>취득일자 : 20.01.11</span></li>
-                    <li><span>점수 : 238</span></li>
-                    <li><span>발행기관 : HSK사무국</span></li>
-                </div>
+                {/* 더보기 */}
+                <p className="cursor-pointer text-xl font-semibold underline" onClick={() => toggleSection('skill')}> More <span className="text-slate-500 text-sm">{openSections.skill ? '▲' : '▼'}</span></p>
+                {openSections.skill && (
+                    <div>
+                        <div>
+                            <h3 id='TOEIC' className="text-xl md:text-2xl mt-10"><span>TOEIC</span></h3>
+                            <li><span>취득일자 : 23.03.12</span></li>
+                            <li><span>점수 : 865</span></li>
+                            <li><span>발행기관 : 한국TOEIC위원회</span></li>
+                        </div>
+                        <div>
+                            <h3 id='HSK' className="text-xl md:text-2xl mt-10"><span>HSK 6급</span></h3>
+                            <li><span>취득일자 : 20.01.11</span></li>
+                            <li><span>점수 : 238</span></li>
+                            <li><span>발행기관 : HSK사무국</span></li>
+                        </div>
+                    </div>
+                )}
             </div>
             <div>
                 <p className="font-semibold text-2xl md:text-3xl mt-10"><span>🎓 Education 학위</span></p>

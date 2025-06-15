@@ -26,15 +26,17 @@ export default function Home() {
                         }} />
                 </div>
                 <p className="text-xl sm:text-2xl lg:text-3xl">
-                    Learn, Build, Design for Web
+                    Learn, Build, Design for Web.
                 </p>
                 <div>
                     <p className='text-xl sm:text-2xl lg:text-3xl'>
-                        사용자에게 도움을 주는 서비스를 구현하는
-                        <br />개발자를 꿈꾸고 있습니다.
+                    기술을 통해 편리함이 증진되는 세상을 꿈꾸며,
+                    <br/>
+                    사용자에게 도움을 주는 서비스 구현 및 개발을 지향합니다.
                     </p>
                     <p className='text-xl sm:text-2xl lg:text-3xl'>
-                        배우는 걸 좋아해 어려운 문제를 마주하더라도 잘 해결할 수 있습니다.<br />
+                        {/* 배우는 걸 좋아해 어려운 문제를 마주하더라도 잘 해결할 수 있습니다.<br /> */}
+                        지금은, 개발하는 전산직 공무원으로 근무하고 있습니다. (2024. 10.~)
                     </p>
                     <Link className="text-2xl lg:text-3xl underline text-gray-950" href="/about">Read More→</Link>
                 </div>
